@@ -430,8 +430,139 @@ section.depoimentos .depoimento-single{
 	color: white;
 }
 
-
 /*Fim Sessão Social*/
+
+/* Início Sessão Contato */
+
+section.contato{
+	padding: 60px 2%;
+}
+
+section.contato h2{
+	font-size: 18px;
+	color: #595959;
+	text-align: center;
+}
+
+section.contato form{
+	width: 100%;
+	margin: 30px auto;
+	max-width: 500px;
+}
+
+.form-wraper{
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper span{
+	font-size: 13px;
+	color: #4b4b4b;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	padding: 15px;
+	height: 120px;
+	margin-top: 8px;
+	resize: none;
+	border: 1px solid #dadada;
+}
+
+.form-wraper input[type=submit]{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	border: 0;
+	border-radius: 17px;
+	background-color: #ff6e4a;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.form-wraper input[type=submit]:hover{
+	background-color: #d65433;
+}
+
+
+/* Fim Sessão Contato */
+
+/* Início Footer */
+
+footer{
+	padding: 40px 2%;
+	background-color: #ff6e4a;
+}
+
+footer .container{
+	max-width: 1024px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+footer .footer-block h2{
+	font-size: 18px;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+}
+
+footer .footer-block p{
+	font-size: 13px;
+	margin-top: 8px;
+	color: white;
+	text-align: center;
+}
+
+/* Fim Footer */
+
+/* Início Sessão Creator */
+
+
+section.creator{
+	padding: 20px 2%;
+	background-color: #e36242;
+}
+
+section.creator .direitos{
+	width: 50%;
+	position: relative;
+	top: 35px;
+}
+
+.logo-creator{
+	float: right;
+	width: 50%;
+	height: 50px;
+	background-image: url('../assets/logo-creator.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+/* Fim Sessão Creator */
 
 /* Início Media Query */
 
@@ -527,6 +658,16 @@ section.depoimentos .depoimento-single{
 		display: none;
 	}
 
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin: 30px 0;
+	}
+
 }
 
 @media screen and (max-width: 580px){
@@ -540,9 +681,14 @@ section.depoimentos .depoimento-single{
 		width: 100%;
 		padding-top: calc(100% * 0.6);
 	}
+
+	.w50{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 480px){
+
 	header .logo img{
 		width: 200px;
 	}
